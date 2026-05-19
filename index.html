@@ -1,0 +1,1107 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Doppio Jundiaí | Mais que Amplitude</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Dancing+Script:wght@500;700&family=Josefin+Sans:wght@200;300;400;500&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg:#140a04;
+    --bg2:#241208;
+    --gold:#c9915a;
+    --gold-light:#f0d7a5;
+    --white:#ffffff;
+    --muted:#d4b493;
+    --border:rgba(201,145,90,.18);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg);
+    color:var(--white);
+    font-family:'Josefin Sans',sans-serif;
+    overflow-x:hidden;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+    font-family:inherit;
+    cursor:pointer;
+}
+
+/* =========================================================
+TOP BAR
+========================================================= */
+
+.announce{
+    background:linear-gradient(90deg,#3a1d0d,#8a572d,#3a1d0d);
+    padding:10px 20px;
+    text-align:center;
+    font-size:10px;
+    letter-spacing:3px;
+    color:white;
+    position:relative;
+    z-index:999;
+}
+
+/* =========================================================
+HEADER
+========================================================= */
+
+header{
+    position:fixed;
+    top:34px;
+    left:0;
+    width:100%;
+    z-index:999;
+    padding:18px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(8,4,2,.88);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--border);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo svg{
+    width:22px;
+}
+
+.logo-name{
+    font-family:'Nunito',sans-serif;
+    font-size:24px;
+    font-weight:700;
+    color:white;
+    line-height:1;
+}
+
+.logo-city{
+    font-size:9px;
+    letter-spacing:4px;
+    margin-top:4px;
+    color:rgba(255,255,255,.55);
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+nav a{
+    font-size:11px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:rgba(255,255,255,.8);
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--gold-light);
+}
+
+.nav-btn{
+    border:1px solid var(--gold);
+    padding:10px 18px;
+    color:var(--gold-light);
+}
+
+.nav-btn:hover{
+    background:var(--gold);
+    color:black;
+}
+
+/* =========================================================
+HERO
+========================================================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:150px 5% 100px;
+
+    background-image:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.55)
+    ),
+    url('Screenshot_20260519_092041_Gallery.jpg');
+
+    background-size:cover;
+    background-position:65% 35%;
+    position:relative;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,
+    rgba(201,145,90,.15),
+    transparent 40%);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:1200px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+    max-width:600px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-badge{
+    border:1px solid var(--gold);
+    padding:8px 18px;
+    color:var(--gold-light);
+    font-size:10px;
+    letter-spacing:4px;
+    margin-bottom:18px;
+}
+
+.hero-text h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(3rem,6vw,5.2rem);
+    line-height:1;
+    font-weight:300;
+    margin-bottom:26px;
+}
+
+.hero-text h1 em{
+    color:var(--gold-light);
+    font-style:italic;
+}
+
+.hero-text p{
+    max-width:500px;
+    font-size:15px;
+    line-height:2;
+    color:var(--muted);
+    letter-spacing:1px;
+}
+
+/* =========================================================
+FORM
+========================================================= */
+
+.hero-form{
+    width:400px;
+    max-width:100%;
+
+    background:rgba(16,8,3,.92);
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(18px);
+
+    padding:42px 30px;
+
+    position:relative;
+}
+
+.hero-form::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:42px;
+    height:42px;
+    border-top:1px solid var(--gold);
+    border-left:1px solid var(--gold);
+}
+
+.hero-form::after{
+    content:'';
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:42px;
+    height:42px;
+    border-right:1px solid var(--gold);
+    border-bottom:1px solid var(--gold);
+}
+
+.hero-form h3{
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--gold-light);
+    letter-spacing:4px;
+    font-size:12px;
+    font-weight:300;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-input,
+.form-select{
+    width:100%;
+    padding:15px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.1);
+    color:white;
+    outline:none;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+.form-select option{
+    background:#1b0d05;
+}
+
+.form-input:focus,
+.form-select:focus{
+    border-color:var(--gold);
+}
+
+.btn-submit{
+    width:100%;
+    padding:18px;
+    border:none;
+
+    background:linear-gradient(
+        135deg,
+        #8a572d,
+        #c9915a,
+        #f0d7a5
+    );
+
+    color:black;
+
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:11px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn-submit:hover{
+    transform:translateY(-2px);
+    opacity:.92;
+}
+
+.form-note{
+    margin-top:14px;
+    text-align:center;
+    font-size:10px;
+    color:rgba(255,255,255,.35);
+}
+
+/* =========================================================
+SECTION SHARED
+========================================================= */
+
+.section{
+    padding:100px 5%;
+    text-align:center;
+}
+
+.section-label{
+    color:var(--gold);
+    letter-spacing:5px;
+    text-transform:uppercase;
+    font-size:10px;
+    margin-bottom:14px;
+}
+
+.section-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(2.4rem,5vw,4rem);
+    font-weight:300;
+    line-height:1.15;
+    margin-bottom:24px;
+}
+
+.section-title em{
+    color:var(--gold-light);
+    font-style:italic;
+}
+
+.section-sub{
+    max-width:700px;
+    margin:0 auto;
+    line-height:2;
+    color:var(--muted);
+    letter-spacing:1px;
+}
+
+/* =========================================================
+GRID SPECS
+========================================================= */
+
+.specs-grid{
+    margin-top:60px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:2px;
+
+    background:rgba(255,255,255,.06);
+}
+
+.spec-card{
+    background:var(--bg2);
+    padding:60px 30px;
+}
+
+.spec-type{
+    color:var(--gold);
+    letter-spacing:4px;
+    font-size:10px;
+    margin-bottom:20px;
+}
+
+.spec-size{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    line-height:1;
+}
+
+.spec-size sup{
+    font-size:.3em;
+}
+
+.spec-detail{
+    margin-top:14px;
+    color:var(--gold-light);
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+}
+
+.spec-info{
+    margin-top:18px;
+    font-size:10px;
+    letter-spacing:3px;
+    color:rgba(255,255,255,.45);
+}
+
+/* =========================================================
+SHOWCASE
+========================================================= */
+
+.showcase{
+    background:#0d0602;
+}
+
+.showcase-grid{
+    margin-top:60px;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:18px;
+}
+
+.showcase-item{
+    overflow:hidden;
+    position:relative;
+    aspect-ratio:3/4;
+    border:1px solid var(--border);
+}
+
+.showcase-item img{
+    height:100%;
+    object-fit:cover;
+    transition:1s;
+}
+
+.showcase-item:hover img{
+    transform:scale(1.05);
+}
+
+.showcase-caption{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+
+    padding:30px 20px 18px;
+
+    color:var(--gold-light);
+    letter-spacing:3px;
+    font-size:10px;
+}
+
+/* =========================================================
+DUAL
+========================================================= */
+
+.dual{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:70px;
+}
+
+.dual-image{
+    flex:1;
+    min-width:320px;
+    max-width:520px;
+}
+
+.dual-image img{
+    border:1px solid var(--border);
+}
+
+.dual-text{
+    flex:1;
+    min-width:320px;
+    max-width:600px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+}
+
+.dual-text h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(2.4rem,4vw,3.5rem);
+    color:var(--gold-light);
+    font-weight:300;
+    line-height:1.15;
+    margin-bottom:24px;
+}
+
+.dual-text p{
+    color:var(--muted);
+    line-height:2;
+    letter-spacing:1px;
+    margin-bottom:22px;
+    max-width:520px;
+}
+
+.btn-outline{
+    border:1px solid var(--gold);
+    padding:14px 34px;
+    color:var(--gold-light);
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:11px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:var(--gold);
+    color:black;
+}
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+footer{
+    background:#080402;
+    border-top:1px solid var(--border);
+    text-align:center;
+    padding:80px 5% 50px;
+}
+
+.footer-title{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+    color:var(--gold-light);
+    margin-bottom:34px;
+}
+
+.footer-text{
+    max-width:800px;
+    margin:0 auto;
+    color:#7a6757;
+    line-height:2;
+    font-size:11px;
+}
+
+.footer-highlight{
+    margin-top:22px;
+    display:block;
+    color:var(--gold);
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:10px;
+}
+
+/* =========================================================
+WHATS FLOAT
+========================================================= */
+
+.wpp{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    z-index:999;
+
+    box-shadow:0 10px 30px rgba(37,211,102,.3);
+}
+
+.wpp svg{
+    width:28px;
+    fill:white;
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    header{
+        justify-content:center;
+    }
+
+    .hero{
+        background-position:68% center;
+        padding-top:140px;
+    }
+
+    .hero-content{
+        gap:40px;
+    }
+
+    .hero-text h1{
+        line-height:1.05;
+        font-size:3.5rem;
+    }
+
+    .hero-text p{
+        font-size:14px;
+    }
+
+    .section{
+        padding:80px 5%;
+    }
+
+    .spec-size{
+        font-size:3.2rem;
+    }
+
+}
+
+@media(max-width:520px){
+
+    .announce{
+        font-size:8px;
+        letter-spacing:2px;
+    }
+
+    .hero{
+        background-position:70% center;
+    }
+
+    .hero-text h1{
+        font-size:2.9rem;
+    }
+
+    .hero-form{
+        padding:38px 22px;
+    }
+
+    .showcase-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .showcase-caption{
+        font-size:8px;
+        letter-spacing:2px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="announce">
+✦ BREVE LANÇAMENTO EM JUNDIAÍ ✦
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+    <a href="#" class="logo">
+
+        <svg viewBox="0 0 30 48" fill="none">
+            <path d="M 2,2 L 28,2 L 28,16" stroke="white" stroke-width="2.4"/>
+            <path d="M 2,30 L 2,46 L 28,46" stroke="white" stroke-width="2.4"/>
+        </svg>
+
+        <div>
+            <div class="logo-name">Doppio</div>
+            
+        </div>
+
+    </a>
+
+    <nav>
+
+        <a href="#projeto">Projeto</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+
+        <a
+            href="https://wa.me/5511995722584"
+            target="_blank"
+            class="nav-btn"
+        >
+            Falar com Consultor
+        </a>
+
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="contato">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h1>
+                Mais que <em>amplitude,</em><br>
+                uma nova<br>
+                perspectiva de morar.
+            </h1>
+
+            <p>
+                Antecipe-se ao lançamento mais aguardado de Jundiaí.
+                Torre única e exclusiva com living de pé-direito duplo,
+                plantas amplas de 156 a 442 m² e um novo patamar de sofisticação.
+            </p>
+
+        </div>
+
+        <div class="hero-form">
+
+            <h3>✦ ACESSO EXCLUSIVO ✦</h3>
+
+            <form id="leadForm">
+
+                <div class="form-group">
+                    <input
+                        class="form-input"
+                        type="text"
+                        id="nome"
+                        placeholder="Nome Completo"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <input
+                        class="form-input"
+                        type="email"
+                        id="email"
+                        placeholder="Seu melhor e-mail"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <input
+                        class="form-input"
+                        type="tel"
+                        id="telefone"
+                        placeholder="WhatsApp com DDD"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+
+                    <select class="form-select" id="interesse">
+
+                        <option value="">
+                            Interesse em...
+                        </option>
+
+                        <option>
+                            Apartamentos Tipo
+                        </option>
+
+                        <option>
+                            Coberturas
+                        </option>
+
+                        <option>
+                            Todas as opções
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Receber Informações Antecipadas
+                </button>
+
+                <div class="form-note">
+                    Seus dados estão protegidos.
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SPECS -->
+
+<section class="section" id="projeto">
+
+    <div class="section-label">
+        Tipologias Disponíveis
+    </div>
+
+    <h2 class="section-title">
+        O espaço que você merece,<br>
+        <em>dobrado.</em>
+    </h2>
+
+    <p class="section-sub">
+        Plantas generosas, living com pé-direito duplo e uma proposta arquitetônica criada para quem busca exclusividade absoluta.
+    </p>
+
+    <div class="specs-grid">
+
+        <div class="spec-card">
+
+            <div class="spec-type">
+                APARTAMENTOS TIPO
+            </div>
+
+            <div class="spec-size">
+                156–210<sup>m²</sup>
+            </div>
+
+            <div class="spec-detail">
+                3 e 4 suítes
+            </div>
+
+            <div class="spec-info">
+                LIVING COM PÉ-DIREITO DUPLO
+            </div>
+
+        </div>
+
+        <div class="spec-card">
+
+            <div class="spec-type">
+                COBERTURAS EXCLUSIVAS
+            </div>
+
+            <div class="spec-size">
+                307–442<sup>m²</sup>
+            </div>
+
+            <div class="spec-detail">
+                4 suítes
+            </div>
+
+            <div class="spec-info">
+                O MAIS ALTO PADRÃO DO EMPREENDIMENTO
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SHOWCASE -->
+
+<section class="section showcase" id="galeria">
+
+    <div class="section-label">
+        Exclusividade em Cada Detalhe
+    </div>
+
+    <h2 class="section-title">
+        Uma nova perspectiva<br>
+        <em>de morar.</em>
+    </h2>
+
+    <div class="showcase-grid">
+
+        <div class="showcase-item">
+
+            <img src="Photo_1778046957694.jpg">
+
+            <div class="showcase-caption">
+               
+            </div>
+
+        </div>
+
+        <div class="showcase-item">
+
+            <img src="Photo_1778046956988.jpg">
+
+            <div class="showcase-caption">
+                
+            </div>
+
+        </div>
+
+        <div class="showcase-item">
+
+            <img src="Photo_1778046957334.jpg">
+
+            <div class="showcase-caption">
+                
+            </div>
+
+        </div>
+
+        <div class="showcase-item">
+
+            <img src="Photo_1778044720849.jpg">
+
+            <div class="showcase-caption">
+                
+            </div>
+
+</section>
+
+<!-- DUAL -->
+
+<section class="section">
+
+    <div class="dual">
+
+        <div class="dual-image">
+
+            <!-- NOVA IMAGEM INSERIDA -->
+
+            <img
+                src="Screenshot_20260519_123236_Chrome Beta.jpg"
+                alt="Doppio Jundiaí">
+                </br></br>
+
+            <!-- IMAGEM ORIGINAL -->
+
+            <img
+                src="AIRetouch_20260516_125734249.png"
+                alt="Doppio Jundiaí"
+            >
+
+        </div>
+
+        <div class="dual-text">
+
+            <div class="section-label">
+                O Projeto
+            </div>
+
+            <h2>
+                O ápice da sofisticação em Jundiaí
+            </h2>
+
+            <p>
+                Um projeto pensado para quem não abre mão de espaço, conforto e elegância.
+                O Doppio Jundiaí traz plantas inteligentes de 156 a 210 m² e coberturas espetaculares de até 442 m², todas com um imponente living de pé-direito duplo.
+            </p>
+
+            <p>
+                Localizado no nobre Jardim Campos Elísios, você estará a poucos minutos de tudo que importa, vivendo em um verdadeiro refúgio urbano de alto padrão.
+            </p>
+
+            <a
+                href="https://wa.me/5511995722584"
+                target="_blank"
+                class="btn-outline"
+            >
+                Falar com Consultor
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-title">
+        Mais que amplitude, uma nova perspectiva de morar.
+    </div>
+
+    <div class="footer-text">
+
+        Jardim Campos Elísios -- Jundiaí -- SP
+        <br><br>
+
+        Registro de Incorporação R.3 da matrícula 189.290,
+        no 1º Oficial de Registro de Imóveis de Jundiaí/SP.
+
+        <br><br>
+
+        Imagens meramente ilustrativas.
+        Informações sujeitas a alterações sem aviso prévio.
+
+        <span class="footer-highlight">
+            Atendimento Exclusivo | Catedral Brokers
+        </span>
+
+    </div>
+
+</footer>
+
+<!-- FLOAT -->
+
+<a
+    href="https://wa.me/5511995722584"
+    target="_blank"
+    class="wpp"
+>
+
+<svg viewBox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+</svg>
+
+</a>
+
+<script>
+
+document
+.getElementById('leadForm')
+.addEventListener('submit', function(e){
+
+    e.preventDefault();
+
+    const nome =
+    document.getElementById('nome').value;
+
+    const email =
+    document.getElementById('email').value;
+
+    const telefone =
+    document.getElementById('telefone').value;
+
+    const interesse =
+    document.getElementById('interesse').value || 'Não informado';
+
+    const mensagem =
+`Olá! Tudo bem?
+
+Meu nome é ${nome}
+e tenho interesse no Doppio Jundiaí.
+
+Email: ${email}
+WhatsApp: ${telefone}
+
+Interesse:
+${interesse}`;
+
+    window.open(
+        `https://wa.me/5511995722584?text=${encodeURIComponent(mensagem)}`,
+        '_blank'
+    );
+
+});
+
+window.addEventListener('scroll', ()=>{
+
+    const header =
+    document.querySelector('header');
+
+    if(window.scrollY > 10){
+        header.style.top = '0';
+    } else {
+        header.style.top = '34px';
+    }
+
+});
+
+</script>
+
+</body>
+</html>
